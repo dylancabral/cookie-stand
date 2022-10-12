@@ -23,9 +23,52 @@ function Student(name){
   }
 }
 
-let juan = new Student();
-let sara = new Student();
-console.log(juan);
+
+function Store(name,min,max,avg){
+  this.name = name;
+  this.min = min;
+  this.max = max;
+  this.avg = avg;
+  // this.dailytotal = dailytotal
+}
+
+// Store.prototype.
+
+let seattle = new Store(
+'Seattle',
+23,
+65,
+6.3,
+  console.log(store(seattle))
+)
+
+let tokyo = new Store(
+  'Tokyo',
+  3,
+  24,
+  1.2
+)
+
+let dubai = new Store(
+'Dubai',
+20,
+38,
+3.7
+)
+
+let paris = new Store(
+'Paris',
+20,
+38,
+3.7
+)
+
+let lima = new Store(
+'Lima',
+2,
+16,
+4.6
+)
 
 let studentArray =[juan,sara];
 
