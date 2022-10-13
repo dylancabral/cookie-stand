@@ -27,13 +27,31 @@ function Student(name){
 let hour = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm'
   , '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
 
+
+function StoreConstructor(name,min,max,avg){
+=======
 let stores = [];
 
 function Store(name, min, max, avg) {
+
   this.name = name;
   this.min = min;
   this.max = max;
   this.avg = avg;
+
+  this.hourly = [];
+  this.total=0;
+  this.createTable();
+  allStores.push(this);
+}
+
+// Store.prototype.calculateHourly = function() {
+  for (let i = 0; i <hour.length; i++) {
+    let randNum = avgCookies(this.min,this.max);
+    let cookiesPerHour = math.trunc(randNum * this.avg);
+    this.hourly
+  }
+=======
   this.hourlyCookies = [];
   this.dailyTotal = 0;
   // this.Table();
@@ -114,6 +132,7 @@ function createFooter() {
 let grandtotalNum = document.createElement('td');
 grandtotalNum.textContent = grandTotal;
 totalRow.appendChild(grandtotalNum);
+
 
 
 
