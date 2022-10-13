@@ -24,15 +24,24 @@ function Student(name){
 }
 
 
-function Store(name,min,max,avg){
+function StoreConstructor(name,min,max,avg){
   this.name = name;
   this.min = min;
   this.max = max;
   this.avg = avg;
-  // this.dailytotal = dailytotal
+  this.hourly = [];
+  this.total=0;
+  this.createTable();
+  allStores.push(this);
 }
 
-// Store.prototype.
+// Store.prototype.calculateHourly = function() {
+  for (let i = 0; i <hour.length; i++) {
+    let randNum = avgCookies(this.min,this.max);
+    let cookiesPerHour = math.trunc(randNum * this.avg);
+    this.hourly
+  }
+}
 
 let seattle = new Store(
 'Seattle',
