@@ -158,7 +158,7 @@ let lima = new Store(
   4.6
 );
 lima.CreateTable();
-console.log(stores)
+
 
 
 let form = document.querySelector('form')

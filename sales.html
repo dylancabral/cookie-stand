@@ -7,6 +7,7 @@
     <title>Pat's Salmon Cookies</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styleSales.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
     <header>
@@ -30,19 +31,21 @@
         </div>
 
             <form>
+                <fieldset>
                 <label>Store city 
-                    <input type="text" name="CityName">
+                    <input type="text" name="CityName" required="Required">
                 </label>
                 <label>Minimum hourly Customers
-                    <input type="text" name="StoreMinimumCustomers">
+                    <input type="text" name="StoreMinimumCustomers" required="Required">
                 </label>
                 <label>Store Maximum hourly Customers
-                    <input type="text" name="StoreMaximumCustomers">
+                    <input type="text" name="StoreMaximumCustomers" required="Required" >
                 </label>
                 <label>Average Cookie Sales Per Customer
-                    <input type="text" name="AvgCookiePerCust">
+                    <input type="text" name="AvgCookiePerCust"  required="Required">
                 </label>
                 <button type="submit">Submit</button>
+            </fieldset>
             </form>
     
     </main>
