@@ -1,5 +1,4 @@
 'use strict'
-'use strict'
 
 /*
 let oneStudent = {
@@ -68,8 +67,8 @@ Store.prototype.CreateTable = function () {
     storesRow.appendChild(cookieData);
   }
   let storeTotal = document.createElement('td');
-    storeTotal.textContent = this.dailyTotal;
-    storesRow.appendChild(storeTotal);
+  storeTotal.textContent = this.dailyTotal;
+  storesRow.appendChild(storeTotal);
 
   section.appendChild(storesRow);
 }
@@ -89,8 +88,8 @@ function CreateHeader() {
     topSection.appendChild(hoursRow);
   }
   let dailyTotalHeader = document.createElement('th');
-dailyTotalHeader.textContent= 'daily total'
-hoursRow.appendChild(dailyTotalHeader);
+  dailyTotalHeader.textContent = 'daily total'
+  hoursRow.appendChild(dailyTotalHeader);
 }
 CreateHeader();
 
@@ -112,9 +111,9 @@ function createFooter() {
     TableFooterNum.textContent = totalPerHour;
     totalRow.appendChild(TableFooterNum);
   }
-let grandtotalNum = document.createElement('td');
-grandtotalNum.textContent = grandTotal;
-totalRow.appendChild(grandtotalNum);
+  let grandtotalNum = document.createElement('td');
+  grandtotalNum.textContent = grandTotal;
+  totalRow.appendChild(grandtotalNum);
 
 
 
@@ -160,5 +159,28 @@ let lima = new Store(
 );
 lima.CreateTable();
 console.log(stores)
-createFooter();
 
+
+let form = document.querySelector('form')
+let handleSubmit = function (event) {
+  event.preventDefault();
+  console.log('the form submitted');
+  let locationName = event.target.CityName.value
+  let newStoreMin = parseInt(event.target.StoreMinimumCustomers.value)
+  let newStoreMax = parseInt(event.target.StoreMaximumCustomers.value)
+  let newStoreAvg = parseInt(event.target.AvgCookiePerCust.value)
+  let table = document.querySelector('table');
+
+  let newLocation = new Store(
+    locationName,
+    newStoreMin,
+    newStoreMax,
+    newStoreAvg
+  );
+
+  table.deleteRow(-1);
+  newLocation.CreateTable();
+  createFooter();
+}
+form.addEventListener('submit', handleSubmit)
+createFooter();

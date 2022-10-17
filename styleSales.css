@@ -11,7 +11,6 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 130px;
-  border: ;
 }
 
 div{
@@ -47,7 +46,6 @@ table {
   border: 3px ridge rgb(170, 80, 73);
   background-color:darksalmon;
   color: rgb(0, 0, 0);
-  margin-top: ;
   margin-left: auto;
   margin-right: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -70,4 +68,16 @@ div{
 
 .salestable{
   padding-top: 100px;
+}
+
+form {
+  border: solid black;
+  flex-direction: column;
+}
+
+aside{
+  border: solid black;
+  display: block;
+
+  display: flex;
 }
