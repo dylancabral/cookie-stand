@@ -8,6 +8,8 @@ header {
   flex-wrap: wrap;
   height: 130px;
   height: 200px;
+  flex-basis: 1;
+  text-shadow: 1px 1px black;
 }
 
 h1{
@@ -16,8 +18,9 @@ h1{
   justify-content: space-around;
   align-items:center ;
   justify-content: center;
- 
-    font-family: "Audiowide", sans-serif;
+  font-family: "Audiowide", sans-serif;
+  color: brown;
+  text-shadow: 1px 1px black;
 }
 
 header img{
@@ -165,6 +168,7 @@ width: 500px;
 /* border: solid black 5px; */
 display: flex;
 flex-direction: column;
+color:cornsilk;
   
 }
 #familypicture{
@@ -189,6 +193,7 @@ h2{
   background-color: darkgrey;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: x-large;
+  color: black;
 }
 
 section{
@@ -208,4 +213,19 @@ gap: 10px;
 
 .salmonClass img{
   width: 200px;
+}
+
+a{
+  text-decoration: none;
+  color: brown;
+   text-shadow: 2px 2px black;
+   font-size: x-large;
+   font-family: "Audiowide", sans-serif;
+}
+
+a:hover{
+  background-color: bisque;
+  border-radius: 10%;
+  cursor: pointer;
+  
 }
