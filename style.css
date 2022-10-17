@@ -77,6 +77,7 @@ li{
   text-align: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+  color:darkslategray
 }
 main{
   padding-top: 20px;
@@ -95,6 +96,7 @@ main img{
   width: 30px;
   margin-bottom: 30px;
   border-radius: 5%;
+  border: solid salmon 10px;
   
 }
 
@@ -112,6 +114,10 @@ footer{
 
 p{
   margin-top: 10px;
+  background-color:darkred;
+  border: solid;
+  border-radius: 5%;
+  padding: 10px;
 
 
 }
@@ -228,4 +234,7 @@ a:hover{
   border-radius: 10%;
   cursor: pointer;
   
+}
+li p{
+  color:ivory;
 }
